@@ -26,7 +26,7 @@
 
 <h2 id="manual"> 📜Manual do Usuário </h2>
 
-Requisitos: ter instalado o Node JS.
+Requisitos: ter instalado o Node JS e o MySQL.
 
 1.Criar uma pasta e clonar o repositório com o seguinte comando no cmd: </li>
 
