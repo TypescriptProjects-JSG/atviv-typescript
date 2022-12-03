@@ -106,7 +106,7 @@ function EditarCliente() {
                         </div>
                         <div className="campo-button">
                                 <div className="button-l">
-                                    <Button className="submit" variant="outline-dark" onClick={() => navigate(-1)}>Voltar</Button>{' '}
+                                    <Button className="submit" variant="outline-dark" onClick={() => navigate("/clientes")}>Voltar</Button>{' '}
                                 </div>
                                 <div>
                                     <Button className="submit btn-resp" variant="outline-dark" type='submit' onClick={() => handleSubmit()}>Atualizar</Button>{' '}

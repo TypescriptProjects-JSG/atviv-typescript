@@ -87,7 +87,7 @@ app.post("/editar/cliente", (req, res) => {
 
     var edicao = new String;
     if(nome != ''){
-        edicao += `nome = '${item}'`
+        edicao += `nome = '${nome}'`
     }
     if(nome_social != ''){
         if(edicao.length>0){
