@@ -29,10 +29,10 @@ function Clientes() {
                 <NavBar_ />
             </header>
             <main>
-                <h1>Clientes</h1>
+                <h1 className="titles"> <strong> Clientes WB </strong> </h1>
                 <div className="tables">
                     <Table striped bordered hover variant="light">
-                        <thead>
+                        <thead className="titles-table">
                             <tr>
                                 <th>Nome</th>
                                 <th>Nome Social</th>
@@ -43,7 +43,7 @@ function Clientes() {
                                 <th>Número</th>
                                 <th>Código postal</th>
                                 <th>Informações</th>
-                                <th>Ações</th>
+                                <th>Opções</th>
                             </tr>
                         </thead>
                         {typeof list !== 'undefined' && list.map((value) => {
@@ -60,9 +60,9 @@ function Clientes() {
                                 <td> {value[8]} </td> 
                                 <td> {value[9]} </td>                
                                 <td>
-                                    <div>
-                                        <a href={`/editar_cliente/${value[0]}`}>Editar</a> <br />
-                                        <a href='/clientes' type='submit' onClick={() => handleSubmit(value[0])}>Remover</a>
+                                    <div className="dupla">
+                                        <a className="editar-cps" href={`/editar_cliente/${value[0]}`}>Editar</a> <br />
+                                        <a className="remover-cps" href='/clientes' type='submit' onClick={() => handleSubmit(value[0])}>Remover</a>
                                     </div>
                                 </td>
                             </tr>

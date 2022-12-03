@@ -59,8 +59,7 @@ function EditarCliente() {
                 <NavBar_ />
             </header>
             <main>
-                <h1>Editar Cliente: {Nome[1]}</h1>
-                <Button className="submit" variant="outline-dark" onClick={() => navigate(-1)}>Voltar</Button>{' '}
+                <h1><strong>Editar Cliente:</strong> {Nome[1]}</h1>
                 <div className="forms">
                     <form>
                         <div className="field">
@@ -71,36 +70,48 @@ function EditarCliente() {
                             <label>Nome social:</label>
                             <input type="text" placeholder={Nome[2]} onChange={(e) => setNomeSocial(e.target.value)}/>
                         </div>
-                        <h3>Endereço:</h3>
-                        <div className="field">
-                            <label>Estado:</label>
-                            <input type="text" placeholder={Nome[3]} onChange={(e) => setEstado(e.target.value)}/>
+                        <div className="campo-duplo">
+                            <div className="field esquerda">
+                                <label>Cidade:</label>
+                                <input type="text" placeholder={Nome[4]} onChange={(e) => setCidade(e.target.value)}/>
+                            </div>
+                            <div className="field direita">
+                                <label>Estado:</label>
+                                <input type="text" placeholder={Nome[3]} onChange={(e) => setEstado(e.target.value)}/>
+                            </div>
                         </div>
-                        <div className="field">
-                            <label>Cidade:</label>
-                            <input type="text" placeholder={Nome[4]} onChange={(e) => setCidade(e.target.value)}/>
+                        <div className="campo-duplo">
+                            <div className="field esquerda">
+                                <label>Rua:</label>
+                                <input type="text" placeholder={Nome[6]} onChange={(e) => setRua(e.target.value)}/>
+                            </div>
+                            <div className="field direita">
+                                <label>Bairro:</label>
+                                <input type="text" placeholder={Nome[5]} onChange={(e) => setBairro(e.target.value)}/>
+                            </div>
                         </div>
-                        <div className="field">
-                            <label>Bairro:</label>
-                            <input type="text" placeholder={Nome[5]} onChange={(e) => setBairro(e.target.value)}/>
-                        </div>
-                        <div className="field">
-                            <label>Rua:</label>
-                            <input type="text" placeholder={Nome[6]} onChange={(e) => setRua(e.target.value)}/>
-                        </div>
-                        <div className="field">
-                            <label>Número:</label>
-                            <input type="text" placeholder={Nome[7]} onChange={(e) => setNumero(e.target.value)}/>
-                        </div>
-                        <div className="field">
-                            <label>Código postal:</label>
-                            <input type="text" placeholder={Nome[8]} onChange={(e) => setCodigoPostal(e.target.value)}/>
+                        <div className="campo-duplo">
+                            <div className="field esquerda">
+                                <label>Número:</label>
+                                <input type="text" placeholder={Nome[7]} onChange={(e) => setNumero(e.target.value)}/>
+                            </div>
+                            <div className="field direita">
+                                <label>Código postal:</label>
+                                <input type="text" placeholder={Nome[8]} onChange={(e) => setCodigoPostal(e.target.value)}/>
+                            </div>
                         </div>
                         <div className="field">
                             <label>Mais informações:</label>
                             <input type="text" placeholder={Nome[9]} onChange={(e) => setInfo(e.target.value)}/>
                         </div>
-                        <Button className="submit" variant="outline-dark" type='submit' onClick={() => handleSubmit()}>Atualizar</Button>{' '}
+                        <div className="campo-button">
+                                <div className="button-l">
+                                    <Button className="submit" variant="outline-dark" onClick={() => navigate(-1)}>Voltar</Button>{' '}
+                                </div>
+                                <div>
+                                    <Button className="submit btn-resp" variant="outline-dark" type='submit' onClick={() => handleSubmit()}>Atualizar</Button>{' '}
+                                </div>
+                            </div>
                     </form>
                 </div>
             </main>

@@ -40,7 +40,7 @@ function CadastrarClientes() {
                 <NavBar_ />
             </header>
             <main>
-                <h1>Cadastrar Cliente</h1>
+                <h1 className='margin-titulo'><strong>Cadastro de Clientes</strong></h1>
                 <div className="forms">
                     <form>
                         <div className="field">
@@ -51,30 +51,35 @@ function CadastrarClientes() {
                             <label>Nome social:</label>
                             <input type="text" onChange={(e) => setNomeSocial(e.target.value)}/>
                         </div>
-                        <h3>Endereço:</h3>
-                        <div className="field">
-                            <label>Estado:</label>
-                            <input type="text" onChange={(e) => setEstado(e.target.value)}/>
+                        <div className="campo-duplo">
+                            <div className="field esquerda">
+                                <label>Cidade:</label>
+                                <input type="text" onChange={(e) => setCidade(e.target.value)}/>
+                            </div>
+                            <div className="field direita">
+                                <label>Estado:</label>
+                                <input type="text" onChange={(e) => setEstado(e.target.value)}/>
+                            </div>
                         </div>
-                        <div className="field">
-                            <label>Cidade:</label>
-                            <input type="text" onChange={(e) => setCidade(e.target.value)}/>
+                        <div className="campo-duplo">
+                            <div className="field esquerda">
+                                <label>Rua:</label>
+                                <input type="text" onChange={(e) => setRua(e.target.value)}/>
+                            </div>
+                            <div className="field direita">
+                                <label>Bairro:</label>
+                                <input type="text" onChange={(e) => setBairro(e.target.value)}/>
+                            </div>
                         </div>
-                        <div className="field">
-                            <label>Bairro:</label>
-                            <input type="text" onChange={(e) => setBairro(e.target.value)}/>
-                        </div>
-                        <div className="field">
-                            <label>Rua:</label>
-                            <input type="text" onChange={(e) => setRua(e.target.value)}/>
-                        </div>
-                        <div className="field">
-                            <label>Número:</label>
-                            <input type="text" onChange={(e) => setNumero(e.target.value)}/>
-                        </div>
-                        <div className="field">
-                            <label>Código postal:</label>
-                            <input type="text" onChange={(e) => setCodigoPostal(e.target.value)}/>
+                        <div className="campo-duplo">
+                            <div className="field esquerda">
+                                <label>Número:</label>
+                                <input type="text" onChange={(e) => setNumero(e.target.value)}/>
+                            </div>
+                            <div className="field direita">
+                                <label>Código postal:</label>
+                                <input type="text" onChange={(e) => setCodigoPostal(e.target.value)}/>
+                            </div>
                         </div>
                         <div className="field">
                             <label>Mais informações:</label>

@@ -7,7 +7,7 @@ function Navbar_() {
     const navigate = useNavigate()
     return (
         <>
-            <Navbar className='nav' variant="dark" expand="lg">
+            <Navbar className='nav' variant="light" expand="lg">
                 <Container>
                     <div>
                         <Navbar.Brand onClick={() => navigate("/")} className="logo"><strong>W B </strong> </Navbar.Brand>
@@ -20,7 +20,7 @@ function Navbar_() {
                                     <NavDropdown.Item onClick={() => navigate("/clientes")}>Clientes</NavDropdown.Item>
                                 </NavDropdown>
                                 <NavDropdown title="Cadastro" id="basic-nav-dropdown">
-                                    <NavDropdown.Item onClick={() => navigate("/cadastrar_cliente")}>Cliente</NavDropdown.Item>
+                                    <NavDropdown.Item onClick={() => navigate("/cadastrar_cliente")}>Clientes</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>
                         </Navbar.Collapse>
