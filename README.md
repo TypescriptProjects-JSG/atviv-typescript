@@ -38,7 +38,7 @@ git clone https://github.com/TypescriptProjects-JSG/atviv-typescript
 
 <img src="img/index.png">
 
-3.Entrar na pasta do projeto (cd atvi-typescript) e executar:
+3.Entrar na pasta do projeto (cd atviv-typescript) e executar:
 
 ```
 cd back
@@ -46,7 +46,7 @@ npm install
 node index.js
 ```
 
-4.Abrir outro terminal, entrar na pasta do projeto (cd atvi-typescript) e executar:
+4.Abrir outro terminal, entrar na pasta do projeto (cd atviv-typescript) e executar:
 
 ```
 cd front
